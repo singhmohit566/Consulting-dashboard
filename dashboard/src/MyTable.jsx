@@ -12,11 +12,11 @@ import Paper from '@mui/material/Paper';
 const MyTable = ({data}) => {
     return (
         <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>Organization Name </TableCell>
-              <TableCell align="right">Amount Donated</TableCell>
+              <TableCell>Amount Donated</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -28,7 +28,7 @@ const MyTable = ({data}) => {
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
-                <TableCell align="right">{row.value}</TableCell>
+                <TableCell>{row.value}</TableCell>
               </TableRow>
             ))}
           </TableBody>
